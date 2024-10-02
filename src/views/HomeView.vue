@@ -8,7 +8,7 @@ const router = useRouter();
 </script>
 
 <template>
- <div class="flex flex-row align-items-center justify-content-evenly ">
+ <div id="home-page" class="flex flex-row align-items-center justify-content-evenly ">
   <section class="flex flex-column align-items-center">
     <h1>{{ $t('HOME.TITLE') }}</h1>
     <button id="order" @click="router.push('/build')" 

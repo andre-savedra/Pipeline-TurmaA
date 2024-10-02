@@ -52,7 +52,7 @@ const addCart = ()=> {
 </script>
 
 <template>
-    <div>
+    <div id="build-page">
         <h1 class="text-center mb-2">{{ $t('BUILD.TITLE') }}</h1>        
         <section class="top-row">
           <PartSelector
@@ -89,7 +89,10 @@ const addCart = ()=> {
           <button @click="addCart" id="add-cart" class="mt-4 app-dark-button">
             {{ $t('BUILD.ADD_CART') }}
           </button>
-        </div>       
+        </div> 
+        
+        <input type="text" id="username">
+        <input type="password" id="password">
       </div>
       
 </template>

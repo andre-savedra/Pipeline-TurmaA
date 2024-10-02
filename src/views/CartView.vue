@@ -6,7 +6,7 @@ const cart = useCart();
 </script>
 
 <template>
-    <div>
+    <div id="cart-page">
         <h1>Cart Page!</h1>
         <table>
             <thead>
@@ -24,7 +24,7 @@ const cart = useCart();
                     <td>{{ index }}</td>
                     <td>{{ robot.head.id }} - {{ robot.head.title }}</td>
                     <td>{{ robot.torso.id }} - {{ robot.torso.title }}</td>
-                    <td>{{ robot.base.id }} - {{ robot.base.title }}</td>                    <td>2 - Grabber</td>
+                    <td>{{ robot.base.id }} - {{ robot.base.title }}</td>               
                     <td>{{ robot.leftArm.id }} - {{ robot.leftArm.title }}</td> 
                     <td>{{ robot.rightArm.id }} - {{ robot.rightArm.title }}</td> 
                     <td>{{ robot.cost }}</td> 
