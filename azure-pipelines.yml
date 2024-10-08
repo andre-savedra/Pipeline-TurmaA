@@ -30,3 +30,11 @@ steps:
   displayName: 'generating dist'
 
 
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(250ae9c3-6c33-4030-b72a-ed22fce22920)'
+    appType: 'webApp'
+    appName: 'andre-savedra-bot2-app2'
+    package: 'dist.zip'
+    deploymentMethod: 'zipDeploy' 
+  displayName: 'web app deployment'
