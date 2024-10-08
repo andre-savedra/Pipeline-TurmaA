@@ -29,11 +29,4 @@ steps:
     replaceExistingArchive: true
   displayName: 'generating dist'
 
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'pipeline-turma-a'
-    appType: 'webApp'
-    appName: 'andre-savedra-bot2-app2'
-    package: 'dist.zip'
-    deploymentMethod: 'zipDeploy'
-  displayName: 'web app deployment'
+
